@@ -1,0 +1,346 @@
+.example1 {
+	perspective: 800px;
+		-webkit-perspective: 800px;
+		background: radial-gradient(#e0e0e0, #aaa);
+		width:100%;
+		height:300px;
+		border-radius:6px;
+		position:relative;
+		margin-bottom: 250px;
+
+}
+.box-front,
+	.box-back{
+		transform-style: preserve-3d;
+		-webkit-transform-style: preserve-3d;
+		 backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+		 width:50%;
+		height:80%;
+		position:absolute;
+		top:10%;
+		left:25%;
+		background:#476AF1;
+		transition:0.8s; text-align:center;
+		line-height: 250px;
+		color:#FFF;
+	}
+.box-back {
+		transform:rotateY(180deg);
+		-webkit-transform:rotateY(180deg);
+		background-color:#7E0002;
+}
+.example1:hover .box-front {
+		transform:rotateY(180deg);
+		-webkit-transform:rotateY(180deg);
+}
+.example1:hover .box-back {
+		transform:rotateY(360deg);
+		-webkit-transform:rotateY(360deg);
+}
+
+
+
+.ball {
+	float: left;
+	position: absolute;
+	bottom: 155px;
+    width: 200px;
+    height: 200px;  
+    margin-top: 250px;
+
+} 
+@-webkit-keyframes rollingball {
+	0%{left:10%;}
+	20%{left:20%;}
+	50%{left:30%;}
+	100%{left:40%;}
+}
+.ball {
+	-webkit-animation:rollingball 2s infinite;
+}
+@-webkit-keyframes rollingball {
+	from{left:0%;-webkit-transform: rotate(0deg);}
+	to{left:100%;-webkit-transform: rotate(360deg);}
+
+}
+
+ 
+
+
+
+
+.example2appx {
+	width: 500px;
+	height: 200px;
+	background: green;
+	margin-top: 35px;
+	border-radius: 47em 4em 16em 18em / 2em 39em 94em 89em;
+	}
+.example3 {
+	width: 200px;
+	height: 200px;
+	background: red;
+	border-radius: 200px;
+}
+.example3appx {
+	width: 500px;
+	height: 200px;
+	background: blue;
+	margin-top: 35px;
+	border-radius: 350px 50px;
+}
+		
+.example3:hover {
+	width: 300px;
+	background: blue;
+	border-radius: 90px;
+	transition: all 2s ease;
+}
+.example3appx:hover {
+	width: 300px;
+	background: red;
+	transition: all 2s ease;
+}
+.example4 {
+	width: 200px;
+	height: 200px;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	background: yellow;
+	box-shadow: 30px 30px 20px rgba(30, 20, 10, 1);
+}
+.example5 {
+	width: 200px;
+	height: 200px;
+	margin-top: 35px;
+	background: black;
+	box-shadow: 30px 30px 20px rgba(150, 30, 20, 1);
+}
+.example6 {
+	width: 200px;
+	height: 200px;
+	margin-top: 35px;
+	background: black;
+	box-shadow: inset 30px 30px 30px rgba(150, 125, 18, 1);
+}
+.example7 {
+	background: rgb(50, 250, 100);
+	text-align: center;
+	font-size: 26px;
+	font-weight: bolder;
+	font-family: Helvetica;
+	color: red;
+	width: 200px;
+	height: 50px;
+	border-radius: 8px;
+	line-height: 50px;
+	padding: 15px;
+}
+.example8 {
+	margin: 60px;	
+	background: rgb(92, 228,222);
+	text-align: center;
+	font-size: 26px;
+	font-weight: bolder;
+	font-family: Helvetica;
+	color: white;
+	width: 200px;
+	height: 50px;
+	border-radius: 8px;
+	line-height: 50px;
+	padding: 15px;
+	text-shadow: 3px 3px 3px black;
+	box-shadow: inset -1px -3px 6px black;
+}
+.example8:hover {
+	height: 47px;
+	margin-top: 63px;
+	box-shadow: inset 0px -3px 0px rgb(58, 166, 132);
+}
+.example8:active {
+	height: 44px;
+	margin-top: 66px;
+	box-shadow: inset 0px 3px 0px rgb(58, 166, 132);
+
+}
+
+.example9 {
+	margin: 0;
+	top: -14px;
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	background: yellow;
+	box-shadow: 30px 30px 20px rgba(30, 20, 10, 0);
+
+}
+
+
+.example9opac {
+	width: 200px;
+	height: 200px;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	bottom: 200px;
+	background: red;
+	position:relative;
+	opacity: 0.2;
+	box-shadow: 30px 30px 20px rgba(30, 20, 10, 0);
+	
+}
+@-webkit-keyframes slideopac {
+	0%{left:20%;}
+	50%{left:5%;}
+	100%{left:20%;}
+}
+.example9opac {
+	-webkit-animation:slideopac 2s infinite;
+}
+
+
+
+p.one {
+	border-style: solid;
+	border-width: 2px;
+}
+p.two {
+	border-style: solid;
+	border-width: thick;
+}
+p.three {
+	border-style: solid;
+	border-width: 1px 4px 12px 4px;
+}
+p.four {
+	height:200px;
+	border-style: solid;
+	border-color: #bbbbaa #111111 #ee3e80 #0088dd;
+}
+p.five {
+	width: 250px;
+	border: 3px dotted blue;
+}
+div {
+	border-bottom: 1px solid #efefef;
+	margin: 10px;
+	padding-bottom: 10px;
+	width: 260px;
+}
+.title {
+	float: left;
+	width: 100px;
+	text-align: right;
+	padding-right: 10px;
+}
+.submit {
+	text-align: right;
+}
+.box1 {
+	width: 200px;
+	height: 200px;
+	background: red;
+	position: relative;
+	top: 100px;
+	left: 50%;
+	margin-left:-100px;
+
+}
+.box2 {
+	width: 200px;
+	height: 200px;
+	background: yellow;
+	position: relative;
+	bottom: 100px;
+	left: 90%;
+	margin-left:-100px;
+}	
+@-webkit-keyframes movingbox{
+	0%{left:90%;}
+	50%{left:10%;}
+	100%{left:90%;}
+}
+.box2 {
+	-webkit-animation:movingbox 5s infinite;
+}
+
+.box3 {
+	width: 200px;
+	height: 200px;
+	background: blue;
+	position:relative;
+	top: 100px;
+	left: 50%;
+	margin-left:-100px;
+
+}
+.box4 {
+	width: 200px;
+	height: 200px;
+	background: black;
+	position: relative;
+	bottom: 100px;
+	left: 90%;
+	margin-left:-100px;
+}
+@-webkit-keyframes rollingbox{
+	0%{left:90%;}
+	50%{left:10%;}
+	100%{left:90%;}
+}
+.box4 {
+	-webkit-animation:rollingbox 5s infinite;
+}
+@-webkit-keyframes rollingbox{
+	from{left:90%;-webkit-transform: rotate(0deg);}
+	to{left:10%;-webkit-transform: rotate(360deg);}
+	
+}
+#animation-container { 
+	width: 200px;
+	height: 200px;
+	position: relative;
+	margin-bottom: 250px;
+	left: 300px;
+	animation: inout 5s; 
+	animation-iteration-count: infinite;
+	-webkit-animation: inout 5s; 
+	-webkit-animation-iteration-count: infinite; 
+	
+} 
+ 
+@-webkit-keyframes inout { 
+0%   { -webkit-transform: scale(0, 0); } 
+25%  { -webkit-transform: scale(1, 1); }
+50%  { -webkit-transform: scale(0, 0); }
+100% { -webkit-transform: scale(1, 1); } 
+} 
+
+#skew {   
+-webkit-animation: skew 10s infinite;
+-webkit-animation-iteration-count: infinite;
+}
+ 
+ 
+@-webkit-keyframes skew { 
+0%  { -webkit-transform: skew(50deg,50deg) ; } 
+25% { -webkit-transform: scale(.5,.5);       } 
+50% { -webkit-transform: skew(50deg, 50deg);  } 
+100% { -webkit-transform: scale(.5,.5);        } 
+}
+ 
+.logo { 
+margin-left: 500px;
+background-image: url('http://rack.3.mshcdn.com/media/ZgkyMDEyLzEyLzA0LzRlLzVhd2Vzb21lb3B0LmNxdC5qcGcKcAl0aHVtYgk5NTB4NTM0IwplCWpwZw/833853f1/c00/5-awesome-optical-illusion-videos-c8b7f5fbe8.jpg'); 
+background-repeat: no-repeat; 
+height: 800px; 
+width: 800px; 
+position: relative;
+bottom: 400px;
+}
+
+
+
+
