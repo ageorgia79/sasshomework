@@ -1,3 +1,8 @@
+@import "bourbon";
+
+.test {
+	@include box-sizing(border-box);
+}
 .example1 {
 	perspective: 800px;
 		-webkit-perspective: 800px;
@@ -48,6 +53,7 @@
     width: 200px;
     height: 200px;  
     margin-top: 250px;
+    
 
 } 
 @-webkit-keyframes rollingball {
@@ -167,7 +173,7 @@
 
 .example9 {
 	margin: 0;
-	top: -14px;
+	top: 150px;
 	position: relative;
 	width: 200px;
 	height: 200px;
@@ -184,13 +190,14 @@
 	height: 200px;
 	margin-top: 35px;
 	margin-bottom: 35px;
-	bottom: 200px;
+	bottom: 10px;
 	background: red;
 	position:relative;
 	opacity: 0.2;
 	box-shadow: 30px 30px 20px rgba(30, 20, 10, 0);
 	
 }
+
 @-webkit-keyframes slideopac {
 	0%{left:20%;}
 	50%{left:5%;}
@@ -205,6 +212,7 @@
 p.one {
 	border-style: solid;
 	border-width: 2px;
+	margin-top: 80px;
 }
 p.two {
 	border-style: solid;
