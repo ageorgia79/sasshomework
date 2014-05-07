@@ -45,8 +45,6 @@
 		-webkit-transform:rotateY(360deg);
 }
 
-
-
 .ball {
 	float: left;
 	position: absolute;
@@ -54,39 +52,33 @@
     width: 200px;
     height: 200px;  
     margin-top: 250px;
-    
-
-} 
+    .ball:hover {
+	-webkit-animation:rollingball 2s linear;
+}
+   
 @-webkit-keyframes rollingball {
 	0%{left:10%;}
 	20%{left:20%;}
 	50%{left:30%;}
 	100%{left:40%;}
-}
-.ball:hover {
-	-webkit-animation:rollingball 2s linear;
-}
 
-@-webkit-keyframes rollingball {
+@-webkit-keyframes rollingball 
 	from{left:0%;-webkit-transform: rotate(0deg);}
 	to{left:100%;-webkit-transform: rotate(90deg);}
-
 }
 
  
-
-
-
-
 .smileyguy {
 	width: 300px;
 	height: 300px;
 	background: yellow;
 	margin-top: 35px;
+	margin-bottom: 100px;
 	border-radius: 180px;
 	position: relative;
-	}
-.eye1 {
+	-webkit-animation:squash 5s infinite;
+
+.eye1 
 	height: 40px;
 	width: 40px;
 	border-radius: 180px;
@@ -94,8 +86,8 @@
 	position: relative;
 	top: 100px;
 	left: 65px;
-}
-.eye2 {
+
+.eye2 
 	height: 40px;
 	width: 40px;
 	border-radius: 180px;
@@ -103,8 +95,8 @@
 	position: relative;
 	top: 40px;
 	left: 175px;
-}
-.mouth {
+
+.mouth 
 	height: 1px;
 	width: 225px;
 	border-radius: 180px;
@@ -112,8 +104,9 @@
 	position: relative;
 	top: 70px;
 	left: 25px;
-}
-.tongue {
+	-webkit-animation:babble .75s infinite;
+
+.tongue 
 	height: 0px;
 	width: 50px;
 	background: red;
@@ -124,57 +117,51 @@
 	left: 75px;
 	top: 50px;
 	border-radius: 40px 10px 10px 10px / 5px 5px 5px 40px;
+	-webkit-animation:tongue .75s infinite;
 }
 @-webkit-keyframes squash {
 	0%{left:50%;}
 	50%{left:5%;}
 	100%{left:50%;}
-}
-@-webkit-keyframes babble {
+
+@-webkit-keyframes babble 
 	0%{height: 50px;}
 	50%{height: 0px;}
 	100%{height: 50px;}
-}
-@-webkit-keyframes tongue {
+
+@-webkit-keyframes tongue 
 	0%{height: 45px;}
 	50%{height: 0px;}
 	100%{height: 55px;}
 }
-.tongue {
-	-webkit-animation:tongue .75s infinite;
-}
-.mouth {
-	-webkit-animation:babble .75s infinite;
-}
 
-.smileyguy {
-	-webkit-animation:squash 5s infinite;
-}
+
 .example3 {
 	width: 200px;
 	height: 200px;
 	background: red;
 	border-radius: 200px;
+
+.example3:hover 
+	width: 300px;
+	background: blue;
+	border-radius: 90px;
+	transition: all 2s ease;
 }
+
 .example3appx {
 	width: 500px;
 	height: 200px;
 	background: blue;
 	margin-top: 35px;
 	border-radius: 350px 50px;
-}
-		
-.example3:hover {
-	width: 300px;
-	background: blue;
-	border-radius: 90px;
-	transition: all 2s ease;
-}
-.example3appx:hover {
+
+.example3appx:hover 
 	width: 300px;
 	background: red;
 	transition: all 2s ease;
 }
+
 .example4 {
 	width: 200px;
 	height: 200px;
@@ -225,17 +212,16 @@
 	padding: 15px;
 	text-shadow: 3px 3px 3px black;
 	box-shadow: inset -1px -3px 6px black;
-}
-.example8:hover {
+
+.example8:hover 
 	height: 47px;
 	margin-top: 63px;
 	box-shadow: inset 0px -3px 0px rgb(58, 166, 132);
-}
-.example8:active {
+
+.example8:active 
 	height: 44px;
 	margin-top: 66px;
 	box-shadow: inset 0px 3px 0px rgb(58, 166, 132);
-
 }
 
 .example9 {
@@ -251,7 +237,6 @@
 
 }
 
-
 .example9opac {
 	width: 200px;
 	height: 200px;
@@ -262,7 +247,7 @@
 	position:relative;
 	opacity: 0.2;
 	box-shadow: 30px 30px 20px rgba(30, 20, 10, 0);
-	
+	-webkit-animation:slideopac 2s infinite;
 }
 
 @-webkit-keyframes slideopac {
@@ -270,11 +255,6 @@
 	50%{left:5%;}
 	100%{left:20%;}
 }
-.example9opac {
-	-webkit-animation:slideopac 2s infinite;
-}
-
-
 
 p.one {
 	border-style: solid;
@@ -331,14 +311,12 @@ div {
 	bottom: 100px;
 	left: 90%;
 	margin-left:-100px;
+	-webkit-animation:movingbox 5s infinite;
 }	
 @-webkit-keyframes movingbox{
 	0%{left:90%;}
 	50%{left:10%;}
 	100%{left:90%;}
-}
-.box2 {
-	-webkit-animation:movingbox 5s infinite;
 }
 
 .box3 {
@@ -359,20 +337,20 @@ div {
 	bottom: 100px;
 	left: 90%;
 	margin-left:-100px;
+	-webkit-animation:rollingbox 5s infinite;
 }
 @-webkit-keyframes rollingbox{
 	0%{left:90%;}
 	50%{left:10%;}
 	100%{left:90%;}
 }
-.box4 {
-	-webkit-animation:rollingbox 5s infinite;
-}
+
 @-webkit-keyframes rollingbox{
 	from{left:90%;-webkit-transform: rotate(0deg);}
 	to{left:10%;-webkit-transform: rotate(360deg);}
 	
 }
+
 #animation-container { 
 	width: 200px;
 	height: 200px;
